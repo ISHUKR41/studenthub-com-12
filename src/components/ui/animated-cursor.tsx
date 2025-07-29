@@ -20,8 +20,8 @@ export const AnimatedCursor: React.FC<AnimatedCursorProps> = ({ className }) => 
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
-      cursorX.set(e.clientX - 12);
-      cursorY.set(e.clientY - 12);
+      cursorX.set(e.clientX - 8);
+      cursorY.set(e.clientY - 8);
     };
 
     const handleMouseDown = () => setIsClicking(true);
@@ -73,40 +73,40 @@ export const AnimatedCursor: React.FC<AnimatedCursorProps> = ({ className }) => 
 
   const variants = {
     default: {
+      width: 24,
+      height: 24,
+      backgroundColor: 'rgba(59, 130, 246, 0.9)',
+      border: '2px solid rgba(59, 130, 246, 1)',
+      scale: 1,
+      borderRadius: '50%',
+      boxShadow: '0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.2)',
+    },
+    hover: {
       width: 32,
       height: 32,
-      backgroundColor: 'rgba(59, 130, 246, 0.95)',
-      border: '3px solid rgba(59, 130, 246, 1)',
-      scale: 1,
+      backgroundColor: 'rgba(59, 130, 246, 0.2)',
+      border: '2px solid rgba(59, 130, 246, 1)',
+      scale: 1.3,
       borderRadius: '50%',
       boxShadow: '0 0 20px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.3)',
     },
-    hover: {
-      width: 48,
-      height: 48,
-      backgroundColor: 'rgba(59, 130, 246, 0.3)',
-      border: '3px solid rgba(59, 130, 246, 1)',
+    text: {
+      width: 28,
+      height: 28,
+      backgroundColor: 'rgba(251, 191, 36, 0.3)',
+      border: '2px solid rgba(251, 191, 36, 1)',
       scale: 1.2,
       borderRadius: '50%',
-      boxShadow: '0 0 30px rgba(59, 130, 246, 0.7), 0 0 60px rgba(59, 130, 246, 0.4)',
-    },
-    text: {
-      width: 40,
-      height: 40,
-      backgroundColor: 'rgba(251, 191, 36, 0.4)',
-      border: '3px solid rgba(251, 191, 36, 1)',
-      scale: 1.1,
-      borderRadius: '50%',
-      boxShadow: '0 0 25px rgba(251, 191, 36, 0.6), 0 0 50px rgba(251, 191, 36, 0.3)',
+      boxShadow: '0 0 18px rgba(251, 191, 36, 0.5), 0 0 35px rgba(251, 191, 36, 0.2)',
     },
     click: {
-      width: 20,
-      height: 20,
-      backgroundColor: 'rgba(239, 68, 68, 0.95)',
-      border: '3px solid rgba(239, 68, 68, 1)',
-      scale: 0.7,
+      width: 16,
+      height: 16,
+      backgroundColor: 'rgba(239, 68, 68, 0.9)',
+      border: '2px solid rgba(239, 68, 68, 1)',
+      scale: 0.8,
       borderRadius: '50%',
-      boxShadow: '0 0 15px rgba(239, 68, 68, 0.8), 0 0 30px rgba(239, 68, 68, 0.5)',
+      boxShadow: '0 0 12px rgba(239, 68, 68, 0.7), 0 0 25px rgba(239, 68, 68, 0.4)',
     }
   };
 

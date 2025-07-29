@@ -6,7 +6,7 @@ import { FAQAccordion } from '@/components/Contact/FAQAccordion';
 import EnhancedContactHero from '@/components/Contact/EnhancedContactHero';
 import ServiceDetailsSection from '@/components/Contact/ServiceDetailsSection';
 import ContactMethodsEnhanced from '@/components/Contact/ContactMethodsEnhanced';
-import { UltraMegaAdvanced3DGoogleForm } from '@/components/Contact/UltraMegaAdvanced3DGoogleForm';
+import { UltraAdvancedMega3DContactForm } from '@/components/Contact/UltraAdvancedMega3DContactForm';
 import { EnhancedParallaxContactSection } from '@/components/Contact/EnhancedParallaxContactSection';
 import ComprehensiveContactFooter from '@/components/Contact/ComprehensiveContactFooter';
 import EnhancedSupportTeamSection from '@/components/Contact/EnhancedSupportTeamSection';
@@ -108,7 +108,7 @@ const Contact = () => {
       <EnhancedParallaxContactSection />
 
       {/* ULTRA MEGA ADVANCED 3D Contact Form - MOST REVOLUTIONARY VERSION */}
-      <UltraMegaAdvanced3DGoogleForm />
+      <UltraAdvancedMega3DContactForm />
 
       {/* Enhanced 3D Visualization Section */}
       <ParallaxScroll speed={0.3} direction="up">

@@ -7,13 +7,13 @@ export const useSmoothScroll = () => {
   useEffect(() => {
     // Ultra-smooth scroll with enhanced performance
     const lenis = new Lenis({
-      duration: 0.8,
-      easing: (t) => 1 - Math.pow(1 - t, 3), // Ultra-smooth cubic easing
+      duration: 1.2,
+      easing: (t) => 1 - Math.pow(1 - t, 4), // Even smoother easing
       smoothWheel: true,
-      wheelMultiplier: 0.8, // Reduced for ultra-smooth scrolling
-      touchMultiplier: 1.0,
+      wheelMultiplier: 0.6, // Even more reduced for ultra-smooth scrolling
+      touchMultiplier: 0.8,
       infinite: false,
-      lerp: 0.08, // Ultra-smooth interpolation
+      lerp: 0.06, // Ultra-smooth interpolation
       orientation: 'vertical',
       gestureOrientation: 'vertical',
     });

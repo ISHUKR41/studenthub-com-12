@@ -7,7 +7,7 @@ import { Loader2 } from 'lucide-react';
 import { LiveExamNotifications } from './LiveExamNotifications';
 import { QuestionBankShowcase } from './QuestionBankShowcase';
 import { StatsCounter } from './StatsCounter';
-import { Interactive3DLearning } from './Interactive3DLearning';
+import { EnhancedEducationShowcase } from './EnhancedEducationShowcase';
 import { AIPersonalizationShowcase } from './AIPersonalizationShowcase';
 import { InteractiveStatsSection } from './InteractiveStatsSection';
 import { FeaturesGrid } from './FeaturesGrid';
@@ -54,8 +54,8 @@ export const LandingPage: React.FC = () => {
       
       <StatsCounter />
       
-      {/* Interactive sections with reduced parallax for performance */}
-      <Interactive3DLearning />
+      {/* Enhanced Education Showcase with optimized performance */}
+      <EnhancedEducationShowcase />
       
       <ParallaxScroll speed={0.2} direction="down">
         <AIPersonalizationShowcase />

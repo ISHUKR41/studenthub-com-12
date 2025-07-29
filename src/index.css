@@ -148,11 +148,21 @@ All colors MUST be HSL. Advanced design tokens for 3D-rich, ultra-animated landi
     background: var(--gradient-hero);
   }
 
-  /* Smooth scrolling with enhanced performance */
+  /* Ultra-smooth scrolling with enhanced performance */
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  /* Optimize scroll performance */
+  * {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
   }
 
   /* Custom scrollbar */
